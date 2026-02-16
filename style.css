@@ -1,0 +1,239 @@
+/* ═══════════════════════════════════════════════
+   Patent Analysis Pro — Unified Light Theme
+   ═══════════════════════════════════════════════ */
+
+/* ── Color Palette ──
+   Primary:    #1a73e8 (Google Blue)
+   Primary Dk: #1557b0
+   Accent:     #34a853 (Green)
+   Bg:         #f8fafc
+   Card Bg:    #ffffff
+   Border:     #e1e5ea
+   Text Dark:  #1f2937
+   Text Mid:   #4b5563
+   Text Light: #6b7280
+   ─────────────────── */
+
+/* ── Global resets ── */
+.stApp {
+    background-color: #f8fafc !important;
+}
+
+[data-testid="stHeader"] {
+    background-color: #f8fafc !important;
+}
+
+/* ── Sidebar ── */
+[data-testid="stSidebar"] {
+    background-color: #ffffff !important;
+    border-right: 1px solid #e1e5ea !important;
+}
+
+[data-testid="stSidebar"] * {
+    color: #1f2937 !important;
+}
+
+[data-testid="stSidebar"] h1 {
+    color: #1a73e8 !important;
+    font-size: 1.4rem !important;
+}
+
+/* ── Sidebar Expander ── */
+[data-testid="stSidebar"] [data-testid="stExpander"] {
+    background-color: #f0f4f8 !important;
+    border: 1px solid #e1e5ea !important;
+    border-radius: 8px !important;
+}
+
+[data-testid="stSidebar"] [data-testid="stExpander"] summary {
+    color: #1f2937 !important;
+}
+
+/* ── File Uploader — fix dark background ── */
+[data-testid="stFileUploader"],
+[data-testid="stFileUploader"]>div,
+[data-testid="stFileUploader"] section,
+[data-testid="stFileUploader"] section>div {
+    background-color: #f0f4f8 !important;
+    border-color: #d1d9e0 !important;
+    color: #1f2937 !important;
+}
+
+[data-testid="stFileUploader"] button {
+    background-color: #e8eef4 !important;
+    color: #1a73e8 !important;
+    border: 1px solid #c5d1dc !important;
+    font-weight: 600 !important;
+}
+
+[data-testid="stFileUploader"] button * {
+    color: #1a73e8 !important;
+}
+
+[data-testid="stFileUploader"] small,
+[data-testid="stFileUploader"] span {
+    color: #4b5563 !important;
+}
+
+/* File drop zone */
+[data-testid="stFileUploaderDropzone"],
+[data-testid="stFileUploaderDropzone"]>div {
+    background-color: #f0f4f8 !important;
+    border: 2px dashed #c5d1dc !important;
+    border-radius: 8px !important;
+}
+
+/* ── Main buttons ── */
+.stButton>button {
+    background-color: #1a73e8 !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 6px !important;
+    font-weight: 600 !important;
+    padding: 0.5rem 1.2rem !important;
+    transition: background-color 0.2s ease !important;
+}
+
+.stButton>button:hover {
+    background-color: #1557b0 !important;
+}
+
+.stButton>button * {
+    color: #ffffff !important;
+}
+
+/* ── Wipson Link ── */
+.wipson-link {
+    background-color: #34a853 !important;
+    color: #ffffff !important;
+    padding: 10px 16px !important;
+    border-radius: 6px !important;
+    text-align: center !important;
+    display: block !important;
+    text-decoration: none !important;
+    font-weight: 600 !important;
+    transition: background-color 0.2s ease !important;
+}
+
+.wipson-link:hover {
+    background-color: #2d9249 !important;
+}
+
+/* ── Main content text ── */
+.main h1 {
+    color: #1f2937 !important;
+}
+
+.main h2,
+.main h3 {
+    color: #1f2937 !important;
+}
+
+.main p,
+.main li,
+.main span {
+    color: #1f2937 !important;
+}
+
+label {
+    font-weight: 500 !important;
+    color: #1f2937 !important;
+}
+
+/* ── Inputs ── */
+input,
+textarea {
+    color: #1f2937 !important;
+    background-color: #ffffff !important;
+    border: 1px solid #d1d9e0 !important;
+    border-radius: 6px !important;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #1a73e8 !important;
+    box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.15) !important;
+}
+
+/* ── Tabs ── */
+button[data-baseweb="tab"] {
+    background-color: transparent !important;
+}
+
+button[data-baseweb="tab"] * {
+    color: #4b5563 !important;
+    font-weight: 500 !important;
+}
+
+button[aria-selected="true"] {
+    border-bottom: 3px solid #1a73e8 !important;
+}
+
+button[aria-selected="true"] * {
+    color: #1a73e8 !important;
+    font-weight: 700 !important;
+}
+
+/* ── Metric cards ── */
+[data-testid="stMetric"] {
+    background-color: #ffffff !important;
+    border: 1px solid #e1e5ea !important;
+    border-radius: 10px !important;
+    padding: 16px 20px !important;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06) !important;
+}
+
+[data-testid="stMetric"] label {
+    color: #6b7280 !important;
+    font-size: 0.82rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.04em !important;
+}
+
+[data-testid="stMetric"] [data-testid="stMetricValue"] {
+    color: #1a73e8 !important;
+    font-weight: 700 !important;
+    font-size: 1.8rem !important;
+}
+
+/* ── Dataframe ── */
+[data-testid="stDataFrame"] {
+    border: 1px solid #e1e5ea !important;
+    border-radius: 8px !important;
+    overflow: hidden !important;
+}
+
+[data-testid="stDataFrame"] * {
+    color: #1f2937 !important;
+}
+
+/* ── Chart containers ── */
+.js-plotly-plot {
+    border-radius: 10px !important;
+    border: 1px solid #e1e5ea !important;
+    background: #ffffff !important;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04) !important;
+}
+
+/* ── Info / Success / Warning / Error boxes ── */
+[data-testid="stAlert"] {
+    border-radius: 8px !important;
+}
+
+/* ── Dividers ── */
+hr {
+    border-color: #e1e5ea !important;
+    opacity: 0.6 !important;
+}
+
+/* ── Code block ── */
+.stCodeBlock,
+pre {
+    background-color: #f0f4f8 !important;
+    border: 1px solid #e1e5ea !important;
+    border-radius: 6px !important;
+}
+
+code {
+    color: #1f2937 !important;
+}

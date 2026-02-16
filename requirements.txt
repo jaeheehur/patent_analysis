@@ -1,0 +1,8 @@
+streamlit
+sqlalchemy
+apscheduler
+pandas
+openpyxl
+python-dotenv
+httpx
+xmltodict
