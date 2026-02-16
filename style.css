@@ -50,13 +50,20 @@
 }
 
 /* ── File Uploader — fix dark background ── */
-[data-testid="stFileUploader"],
-[data-testid="stFileUploader"]>div,
-[data-testid="stFileUploader"] section,
-[data-testid="stFileUploader"] section>div {
-    background-color: #f0f4f8 !important;
-    border-color: #d1d9e0 !important;
-    color: #1f2937 !important;
+[data-testid="stFileUploader"] {
+    background-color: transparent !important;
+}
+
+[data-testid="stFileUploader"] section[data-testid="stFileUploaderDropzone"] {
+    background-color: #ffffff !important;
+    border: 2px dashed #c5d1dc !important;
+    border-radius: 8px !important;
+    color: #000000 !important;
+}
+
+[data-testid="stFileUploader"] section[data-testid="stFileUploaderDropzone"] * {
+    color: #000000 !important;
+    fill: #000000 !important;
 }
 
 [data-testid="stFileUploader"] button {
@@ -72,15 +79,7 @@
 
 [data-testid="stFileUploader"] small,
 [data-testid="stFileUploader"] span {
-    color: #4b5563 !important;
-}
-
-/* File drop zone */
-[data-testid="stFileUploaderDropzone"],
-[data-testid="stFileUploaderDropzone"]>div {
-    background-color: #f0f4f8 !important;
-    border: 2px dashed #c5d1dc !important;
-    border-radius: 8px !important;
+    color: #333333 !important;
 }
 
 /* ── Main buttons ── */
@@ -201,9 +200,16 @@ button[aria-selected="true"] * {
     border: 1px solid #e1e5ea !important;
     border-radius: 8px !important;
     overflow: hidden !important;
+    background-color: #ffffff !important;
 }
 
 [data-testid="stDataFrame"] * {
+    color: #1f2937 !important;
+    fill: #1f2937 !important;
+}
+
+/* Force table text color specifically */
+[data-testid="stDataFrame"] div[data-testid="stTable"] {
     color: #1f2937 !important;
 }
 
@@ -235,5 +241,30 @@ pre {
 }
 
 code {
+    color: #1f2937 !important;
+}
+
+/* ── General Text Overrides for Visibility ── */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+span,
+div {
+    color: #1f2937 !important;
+}
+
+/* Helper to ensure some Streamlit internal containers don't override */
+[data-testid="stMarkdownContainer"] p {
+    color: #1f2937 !important;
+}
+
+[data-testid="stMarkdownContainer"] h1,
+[data-testid="stMarkdownContainer"] h2,
+[data-testid="stMarkdownContainer"] h3 {
     color: #1f2937 !important;
 }
